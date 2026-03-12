@@ -1,0 +1,159 @@
+\documentclass[10.5pt, letterpaper]{article}
+
+\usepackage[top=0.4in, bottom=0.35in, left=0.5in, right=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=false, pdfborder={0 0 0}}
+
+\titleformat{\section}
+  {\bfseries\normalsize}
+  {}{0em}{}
+\titlespacing{\section}{0pt}{8pt}{6pt}
+
+% Custom section header with lines above and below, centered text
+\newcommand{\ressection}[1]{%
+  \vspace{6pt}%
+  \noindent\rule{\linewidth}{0.5pt}%
+  \par\noindent\makebox[\linewidth][c]{\textbf{#1}}%
+  \par\vspace{-8pt}%
+  \noindent\rule{\linewidth}{0.5pt}%
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=4pt, parsep=0pt, topsep=2pt, partopsep=0pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+  {\LARGE\bfseries William Ortiz}\\[2pt]
+  {\small Orlando, FL \textbar\ 619 997 4887 \textbar\ contact@williamortiz.dev \textbar\ github.com/WilliamOrtizDev \textbar\ linkedin.com/in/williamortizdev}\\[1pt]
+  \rule{\linewidth}{0.8pt}\\[2pt]
+  {\large\bfseries Lead DevSecOps Engineer}\\[1pt]
+  {\small\textit{Dynamic Leader with Expertise in DevSecOps, Secure Systems Engineering, \& Infrastructure Automation}}
+\end{center}
+
+\vspace{4pt}
+{\small Results-driven DevSecOps Engineer with a proven track record of bridging security, systems engineering, and automation to deliver secure, scalable infrastructure in high-stakes environments. Experienced leading security operations across complex, multi-team programs while maintaining a balance of technical depth and strategic oversight. Adept at translating security requirements into actionable engineering outcomes, aligning technical strategy with organizational objectives, and engaging directly with customers and stakeholders at all levels. Brings a cross-functional leadership background spanning project management, operations, and client delivery, with a consistent record of improving efficiency, reducing risk, and exceeding performance targets. Committed to integrating security as a core element of the development lifecycle, not an afterthought.}
+
+% CORE COMPETENCIES
+\ressection{CORE COMPETENCIES}
+\begin{center}
+\small
+\begin{tabular}{@{$\diamond$\ }l @{\quad$\diamond$\ }l @{\quad$\diamond$\ }l}
+DevSecOps & Secure SDLC & NIST Compliance \& RMF \\
+Project \& Program Management & Risk Planning \& Mitigation & Stakeholder Engagement \\
+Advanced Automation \& CI/CD & Cloud \& Hybrid Infrastructure & Cross-functional Leadership \\
+Enterprise Infrastructure & Security Architecture & Incident Response \& Recovery \\
+\end{tabular}
+\end{center}
+
+% PROFESSIONAL EXPERIENCE
+\ressection{PROFESSIONAL EXPERIENCE}
+
+
+\textbf{\textit{Boeing Defense, Space \& Security}}
+
+\vspace{1pt}
+\textbf{Lead Information Systems Security Engineer} \hfill \textit{June 2025 -- Present}
+\begin{itemize}
+  \item Led a team of engineers as the primary security authority for the program, directing security operations across 8 integrated engineering teams while maintaining hands-on technical contributions in hardening, compliance, and automation.
+  \item Recovered program security activities from a behind-schedule state, restoring on-time delivery across active security milestones and maintaining alignment with program development timelines.
+  \item Authored RBDs and POA\&Ms to document and remediate security findings in accordance with NIST 800-53, translating technical findings and remediation status into clear reporting for program stakeholders across scheduled reviews.
+  \item Coordinated with software development, unit testing, and systems engineering teams to integrate security requirements throughout the development lifecycle and sustain a consistent security posture.
+  \item Guided the program through its ATO renewal review process, coordinating security documentation, evidence packages, and cross-team remediation efforts to achieve program authorization.
+\end{itemize}
+
+\vspace{8pt}
+\textbf{Senior Systems Engineer} \hfill \textit{April 2023 -- June 2025}
+\begin{itemize}
+  \item Developed new program capabilities using Packer, Ansible, and MAAS for bare metal and virtual machine image deployment, supporting secure and reliable deployment practices, decreasing deployment time by 80\%, resulting in increasing company savings by \$500K.
+  \item Developed Ansible playbooks to automate security controls to increase efficiency and consistency of security control updates by 200\% and contribute to a more robust and responsive security posture within the organization.
+  \item Collaborated with 6 diverse cross-functional teams for NASA's Artemis Program, ensuring that systems are well-integrated, secure, and fully aligned with organizational goals with seamless operations.
+  \item Partnered with the program's security team and system software team to advance security configurations to Oracle Linux servers, align with NIST 800-53, and safeguard against vulnerabilities and automate security control updates with a success rate of 100\%.
+  \item Optimized and enhanced system performance through codebase cleanup, updates, process automation, and streamlining via Ansible to automate the deployment and configuration of Oracle Linux, improving system efficiency by 150\% and reliability by 130\% within 6 months.
+\end{itemize}
+
+\vspace{6pt}
+\pagebreak
+\textbf{\textit{Techspert Services, LLC}} \hfill \textit{November 2021 -- April 2023}
+
+\vspace{1pt}
+\textbf{Regional Technical Operations Manager}
+\begin{itemize}
+  \item Oversaw a team of 10+ technicians ranging from tier I to tier III, managed projects valued at \$8K--\$250K for 60+ clients, and served as the liaison and technical support for 30+ company executives.
+  \item Reduced client incidents by nearly 60\% within 6 months through the development of protocols and policy implementation that standardized workflows to proactively prevent incidents, aligning with NIST 800-61 and NIST Cybersecurity Framework (CSF) guidelines to enhance risk management, incident response, and security best practices.
+  \item Monitored system performance and carried out tuning activities to optimize RHEL server efficiency, resolving bottlenecks and ensuring effective resource utilization.
+  \item Revitalized the entire internal infrastructure using VMware, Docker, AWS, and Red Hat Linux, saving the company \$125K in annual expenses and increasing workforce efficiency by 15\%.
+  \item Designed, deployed, and configured 70+ client network setups while using Ansible to manage multiple system configurations over the course of 3 months, integrating NIST 800-53 security controls to ensure secure configurations, automate compliance enforcement, and reduce misconfiguration risks.
+  \item Provided oversight for daily issue resolution to support 200+ end users and close 30--50 tickets per day, ensuring efficiency and organization by systematically logging issues within an event monitoring system.
+\end{itemize}
+
+\vspace{10pt}
+\textbf{\textit{NPC Technologies}} \hfill \textit{February 2018 -- November 2021}
+
+\vspace{1pt}
+\textbf{Systems Administration Freelancer}
+\begin{itemize}
+  \item Oversaw the builds of 30+ custom computers and 10+ quality network installations, successfully reducing client downtime to less than 5\% annually by providing a stronger, more secure connection.
+  \item Provided technical services, including 20+ residential security installations and providing support for daily technical troubleshooting for 50+ clients.
+  \item Facilitated maintenance and repair for 100+ devices, including computers, cell phones, and laptops, saving clients an estimated \$5K to \$10K in new equipment costs through proactive maintenance.
+  \item Operated server administration for 10+ home networks by using remote management monitoring tools to survey network health, provide security scanning, troubleshoot problems and deploy new software when necessary.
+\end{itemize}
+
+\vspace{10pt}
+\textbf{\textit{Silva Ortiz Contracting}} \hfill \textit{July 2015 -- August 2020}
+
+\vspace{1pt}
+\textbf{Project Manager}
+\begin{itemize}
+  \item Acted as the project manager for 50+ client portfolios and projects valued at \$250K--\$5MM while simultaneously supervising 20+ employees and 30+ contractors across multiple job sites.
+  \item Saved the company an estimated \$200K in expenses through searching for vendors aligned to budgetary needs and negotiating contracts and purchase orders for 30+ vendor agreements.
+  \item Maintained an OSHA-compliant work environment, reducing work related injuries by 30\% in year 1 of management, and increasing this to 70\% by year 3.
+  \item Revised a new employee training program, improving KPIs by 22\% through increased productivity and leading to an increase in customer satisfaction by 29\%.
+\end{itemize}
+
+% TECHNICAL SKILLS
+\pagebreak
+\ressection{TECHNICAL SKILLS}
+
+{\small Red Hat, Oracle Linux, Linux, Windows OS, Mac OS, Proxmox, VMware, Docker, Kubernetes, Ansible, Packer, MAAS, Terraform, AWS, Cloudflare, NGINX, Python, GitHub, GitLab, Bitbucket, Jira, Ollama}
+
+% EDUCATION & CERTIFICATION
+\ressection{EDUCATION \& CERTIFICATION}
+
+\begin{tabular}{@{}p{0.5\linewidth} p{0.5\linewidth}@{}}
+\small\textbf{Bachelor of Science -- Business Management} & \small\textbf{Hashicorp Certified Terraform Associate} \\
+\small\textit{Western Governors University} & \small\textbf{CompTIA Network+ Certificate} \\[2pt]
+\small\textbf{Bachelor of Science -- Computer Science} & \small\textbf{CompTIA Security+ Certificate} \\
+\small\textit{(Est. Completion Aug 2026)} & \small\textbf{CompTIA Project+ Certificate} \\
+\small\textit{Western Governors University} & \small\textbf{ITIL 4 Foundation Certificate} \\[2pt]
+\small\textbf{Red Hat Certified Engineer (RHCE)} & \\
+\small\textbf{Red Hat Certified System Administrator (RHCSA)} & \\
+\end{tabular}
+
+% HOME LAB PROJECTS
+\ressection{HOME LAB PROJECTS}
+
+\begin{itemize}
+  \item Designed and deployed a Proxmox-based hypervisor hosting workloads across unprivileged LXCs, VMs, and Docker containers with VLAN-isolated service categories, complemented by AWS infrastructure managed via Terraform for hybrid cloud provisioning.
+  \item Architected a multi-VLAN network with dual WAN failover, implementing advanced firewall rules and inter-VLAN routing policies to enforce zero-trust segmentation across lab services.
+  \item Built a private LLM inference stack using Ollama with local model hosting and cloud API integration, extending it into a multi-agent automation pipeline with human-in-the-loop approval for end-to-end workflow automation.
+  \item Deployed Nginx Proxy Manager with wildcard SSL and Cloudflare for DNS and edge security, with a GitHub Actions CI/CD pipeline publishing static sites to Cloudflare Pages for automated, secure content delivery.
+  \item Deployed a self-hosted Prometheus-Grafana monitoring stack to track system health, resource utilization, and performance metrics across the lab environment.
+\end{itemize}
+
+\end{document}

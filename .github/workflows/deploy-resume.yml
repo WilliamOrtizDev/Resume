@@ -1,0 +1,42 @@
+name: Deploy Resume to Portfolio
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout resume repo
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: William_Ortiz_Resume.tex
+
+      - name: Clone portfolio repo and push PDF
+        env:
+          PORTFOLIO_REPO_TOKEN: ${{ secrets.PORTFOLIO_REPO_TOKEN }}
+        run: |
+          if [ -z "$PORTFOLIO_REPO_TOKEN" ]; then
+            echo "Error: PORTFOLIO_REPO_TOKEN is not set. Add it under Settings → Secrets → Actions."
+            exit 1
+          fi
+
+          git config --global user.name "WilliamOrtizDev"
+          git config --global user.email "contact@williamortiz.dev"
+
+          git clone "https://x-access-token:${PORTFOLIO_REPO_TOKEN}@github.com/williamortizdev/williamortiz.dev.git" portfolio
+          cd portfolio
+
+          cp ../William_Ortiz_Resume.pdf assets/files/William_Ortiz_Resume.pdf
+
+          git add assets/files/William_Ortiz_Resume.pdf
+          if git diff --staged --quiet; then
+            echo "No changes to PDF, skipping commit."
+          else
+            git commit -m "Updated resume PDF"
+            git push origin main
+          fi
