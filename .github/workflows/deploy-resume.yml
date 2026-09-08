@@ -31,9 +31,9 @@ jobs:
           git clone "https://x-access-token:${PORTFOLIO_REPO_TOKEN}@github.com/williamortizdev/williamortiz.dev.git" portfolio
           cd portfolio
 
-          cp ../William_Ortiz_Resume.pdf assets/files/William_Ortiz_Resume.pdf
+          cp ../William_Ortiz_Resume.pdf public/files/William_Ortiz_Resume.pdf
 
-          git add assets/files/William_Ortiz_Resume.pdf
+          git add public/files/William_Ortiz_Resume.pdf
           if git diff --staged --quiet; then
             echo "No changes to PDF, skipping commit."
           else

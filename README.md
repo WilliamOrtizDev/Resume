@@ -6,7 +6,7 @@ LaTeX source and automated publish pipeline for my resume.
 
 Any push to `main` triggers a GitHub Actions workflow that:
 1. Compiles `William_Ortiz_Resume.tex` to PDF
-2. Pushes the output to [williamortizdev/williamortiz.dev](https://github.com/williamortizdev/williamortiz.dev) at `assets/files/William_Ortiz_Resume.pdf`
+2. Pushes the output to [williamortizdev/williamortiz.dev](https://github.com/williamortizdev/williamortiz.dev) at `public/files/William_Ortiz_Resume.pdf`
 
 ## Files
 
